@@ -1,0 +1,196 @@
+========= BP-SEC-SIM =========
+Branch Predictor
+bp_type: PHT
+strong vulnerabilities: 28
+strong internal hit: 4
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+& $V_{val}$ & $A_{pc}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{pc}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{val}$ & $A_{his}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{his}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{his}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{his}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{his}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{his}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+& $A_{his}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{his}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+bp_type: BTB (ind)
+strong vulnerabilities: 56
+strong internal hit: 8
+strong internal miss: 21
+strong external hit: 6
+strong external miss: 21
+strong transient: 6
+& $A_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $V_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{val}$ & $A_{pc}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{pc}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{val}$ & $A_{his}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{his}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{val}$ & $A_{alias}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{alias}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{his}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{his}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{his}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{his}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{his}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{his}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{his}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{his}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{his}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{his}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+& $A_{his}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{his}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+& $A_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+bp_type: BTB (call)
+strong vulnerabilities: 30
+strong internal hit: 6
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+& $A_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $V_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{val}$ & $A_{pc}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{pc}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{val}$ & $A_{alias}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{alias}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+& $A_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+bp_type: BTB (ret)
+strong vulnerabilities: 30
+strong internal hit: 6
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+& $A_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $V_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{val}$ & $A_{pc}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{pc}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{val}$ & $A_{alias}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{alias}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{pc}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{pc}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{pc}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{pc}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{pc}$ ($slow$) & IM & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{pc}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+& $A_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+bp_type: RSB
+strong vulnerabilities: 12
+strong internal hit: 4
+strong internal miss: 3
+strong external hit: 2
+strong external miss: 3
+strong transient: 2
+& $A_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $V_{inv}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{val}$ & $A_{alias}$ & $V_{val}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{val}$ & $V_{alias}$ & $V_{val}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & 
+& $A_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{val}$ ($fast$) & IH & TSCA/CCA & \\
+& $V_{alias}$ & $V_{val}$ & $A_{alias}$ ($slow$) & EM & TSCA/CCA & 
+& $V_{alias}$ & $V_{val}$ & $V_{alias}$ ($slow$) & IM & TSCA/CCA & \\
+& $A_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & 
+& $V_{alias}$ & $V_{val}$ & $A_{cc}$ ($fast$) & EH & TEA & \\
+== DONE!: BP-SEC-SIM (exp1) ==
+
+

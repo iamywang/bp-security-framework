@@ -1,0 +1,225 @@
+========= BP-SEC-SIM =========
+Lock-BTB
+bp_type: PHT
+strong vulnerabilities: 28
+strong internal hit: 4
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+bp_type: BTB (ind)
+strong vulnerabilities: 19
+strong internal hit: 4
+strong internal miss: 12
+strong external hit: 3
+strong external miss: 0
+strong transient: 3
+bp_type: BTB (call)
+strong vulnerabilities: 11
+strong internal hit: 3
+strong internal miss: 6
+strong external hit: 2
+strong external miss: 0
+strong transient: 2
+bp_type: BTB (ret)
+strong vulnerabilities: 11
+strong internal hit: 3
+strong internal miss: 6
+strong external hit: 2
+strong external miss: 0
+strong transient: 2
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+==============================
+BRB
+bp_type: PHT
+strong vulnerabilities: 10
+strong internal hit: 2
+strong internal miss: 6
+strong external hit: 2
+strong external miss: 0
+strong transient: 2
+bp_type: BTB (ind)
+strong vulnerabilities: 56
+strong internal hit: 8
+strong internal miss: 21
+strong external hit: 6
+strong external miss: 21
+strong transient: 6
+bp_type: BTB (call)
+strong vulnerabilities: 30
+strong internal hit: 6
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+bp_type: BTB (ret)
+strong vulnerabilities: 30
+strong internal hit: 6
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+==============================
+Noisy-XOR-BP
+bp_type: PHT
+strong vulnerabilities: 18
+strong internal hit: 3
+strong internal miss: 8
+strong external hit: 3
+strong external miss: 4
+strong transient: 3
+bp_type: BTB (ind)
+strong vulnerabilities: 12
+strong internal hit: 4
+strong internal miss: 3
+strong external hit: 2
+strong external miss: 3
+strong transient: 2
+bp_type: BTB (call)
+strong vulnerabilities: 2
+strong internal hit: 2
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: BTB (ret)
+strong vulnerabilities: 2
+strong internal hit: 2
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+==============================
+PSC
+bp_type: PHT
+strong vulnerabilities: 0
+strong internal hit: 0
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: BTB (ind)
+strong vulnerabilities: 56
+strong internal hit: 8
+strong internal miss: 21
+strong external hit: 6
+strong external miss: 21
+strong transient: 6
+bp_type: BTB (call)
+strong vulnerabilities: 30
+strong internal hit: 6
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+bp_type: BTB (ret)
+strong vulnerabilities: 30
+strong internal hit: 6
+strong internal miss: 10
+strong external hit: 4
+strong external miss: 10
+strong transient: 4
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+==============================
+LS-BP
+bp_type: PHT
+strong vulnerabilities: 18
+strong internal hit: 3
+strong internal miss: 8
+strong external hit: 3
+strong external miss: 4
+strong transient: 3
+bp_type: BTB (ind)
+strong vulnerabilities: 12
+strong internal hit: 4
+strong internal miss: 3
+strong external hit: 2
+strong external miss: 3
+strong transient: 2
+bp_type: BTB (call)
+strong vulnerabilities: 2
+strong internal hit: 2
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: BTB (ret)
+strong vulnerabilities: 2
+strong internal hit: 2
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+==============================
+HyBP
+bp_type: PHT
+strong vulnerabilities: 18
+strong internal hit: 3
+strong internal miss: 8
+strong external hit: 3
+strong external miss: 4
+strong transient: 3
+bp_type: BTB (ind)
+strong vulnerabilities: 10
+strong internal hit: 2
+strong internal miss: 3
+strong external hit: 2
+strong external miss: 3
+strong transient: 2
+bp_type: BTB (call)
+strong vulnerabilities: 0
+strong internal hit: 0
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: BTB (ret)
+strong vulnerabilities: 0
+strong internal hit: 0
+strong internal miss: 0
+strong external hit: 0
+strong external miss: 0
+strong transient: 0
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+== DONE!: BP-SEC-SIM (exp2) ==
+
+

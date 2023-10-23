@@ -4,6 +4,8 @@ This framework is a formal modeling and analysis framework for evaluating the vu
 
 ## PART I: Symbolic Simulator
 
+Research Artifact of HPCA 2024 Paper: *Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities*. This part contains the source code of our symbolic execution-based branch predictor simulator that can be used to automatically derive and analyze branch predictor security vulnerabilities.
+
 Prerequisites:
 
 - Rust 2021
@@ -28,6 +30,8 @@ Output:
 
 
 ## PART II: Security Benchmark
+
+This part is used to automatically generate a security benchmark for attacks derived from the branch predictor security analysis framework proposed in *Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities* (HPCA 2024).
 
 Prerequisites:
 
@@ -75,9 +79,35 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-We would like to thank the authors of the following projects for their useful utility tools:
+We would like to thank the authors of the following projects for their useful tools:
 
 - [IAIK/transientfail](https://github.com/IAIK/transientfail)
 - [fanyao/branchspec](https://github.com/fanyao/branchspec)
+- [vusec/bhi-spectre-bhb](https://github.com/vusec/bhi-spectre-bhb)
+- [comsec-group/retbleed](https://github.com/comsec-group/retbleed)
+- [Spectre Attacks: Exploiting Speculative Execution](https://spectreattack.com/spectre.pdf)
 
-We have modified and integrated their tools into our code `bp-sec-bench/utils/util.h`.
+We have modified and integrated their tools into our code:
+
+- `bp-sec-bench/utils/util.h`
+- `bp-sec-bench/utils/snippet.S`
+- `bp-sec-bench/src/btb/generator.cpp`
+- `bp-sec-bench/src/call/generator.cpp`
+- `bp-sec-bench/src/pht/generator.cpp`
+- `bp-sec-bench/src/ret/generator.cpp`
+- `bp-sec-bench/src/rsb/generator.cpp`
+
+## Contact and Citation
+
+If you have any questions, please contact me through `GitHub Issues` or email: wangquancheng@whu.edu.cn.
+
+If our work is useful for your research, please consider citing our paper:
+
+```bibtex
+@inproceedings{wang2024modeling,
+  title={{Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities}},
+  author={Wang, Quancheng and Tang, Ming and Xu, Ke and Wang, Han},
+  booktitle={2024 IEEE International Symposium on High-Performance Computer Architecture (HPCA)},
+  year={2024}
+}
+```

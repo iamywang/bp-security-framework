@@ -1,0 +1,12 @@
+========= BP-SEC-SIM =========
+RSB Refilling
+bp_type: RSB
+strong vulnerabilities: 5
+strong internal hit: 2
+strong internal miss: 2
+strong external hit: 1
+strong external miss: 0
+strong transient: 1
+== DONE!: BP-SEC-SIM (exp2) ==
+
+

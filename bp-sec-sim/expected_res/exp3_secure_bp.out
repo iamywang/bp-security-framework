@@ -1,0 +1,75 @@
+========= BP-SEC-SIM =========
+Lock-BTB
+bp_type: PHT
+strong transient: 4
+bp_type: BTB (ind)
+strong transient: 3
+bp_type: BTB (call)
+strong transient: 2
+bp_type: BTB (ret)
+strong transient: 2
+bp_type: RSB
+strong transient: 1
+==============================
+BRB
+bp_type: PHT
+strong transient: 2
+bp_type: BTB (ind)
+strong transient: 6
+bp_type: BTB (call)
+strong transient: 4
+bp_type: BTB (ret)
+strong transient: 4
+bp_type: RSB
+strong transient: 1
+==============================
+Noisy-XOR-BP
+bp_type: PHT
+strong transient: 3
+bp_type: BTB (ind)
+strong transient: 2
+bp_type: BTB (call)
+strong transient: 0
+bp_type: BTB (ret)
+strong transient: 0
+bp_type: RSB
+strong transient: 1
+==============================
+PSC
+bp_type: PHT
+strong transient: 0
+bp_type: BTB (ind)
+strong transient: 6
+bp_type: BTB (call)
+strong transient: 4
+bp_type: BTB (ret)
+strong transient: 4
+bp_type: RSB
+strong transient: 1
+==============================
+LS-BP
+bp_type: PHT
+strong transient: 3
+bp_type: BTB (ind)
+strong transient: 2
+bp_type: BTB (call)
+strong transient: 0
+bp_type: BTB (ret)
+strong transient: 0
+bp_type: RSB
+strong transient: 1
+==============================
+HyBP
+bp_type: PHT
+strong transient: 3
+bp_type: BTB (ind)
+strong transient: 2
+bp_type: BTB (call)
+strong transient: 0
+bp_type: BTB (ret)
+strong transient: 0
+bp_type: RSB
+strong transient: 1
+== DONE!: BP-SEC-SIM (exp3) ==
+
+

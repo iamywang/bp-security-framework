@@ -1,0 +1,21 @@
+========= BP-SEC-SIM =========
+TAGE whole
+bp_type: PHT
+strong vulnerabilities: 34
+strong internal hit: 6
+strong internal miss: 13
+strong external hit: 2
+strong external miss: 13
+strong transient: 2
+==============================
+TAGE separate
+bp_type: PHT
+strong vulnerabilities: 106
+strong internal hit: 18
+strong internal miss: 43
+strong external hit: 2
+strong external miss: 43
+strong transient: 2
+== DONE!: BP-SEC-SIM (exp4) ==
+
+

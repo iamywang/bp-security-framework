@@ -1,0 +1,15 @@
+========= BP-SEC-SIM =========
+Branch Predictor
+bp_type: PHT
+strong transient: 4
+bp_type: BTB (ind)
+strong transient: 6
+bp_type: BTB (call)
+strong transient: 4
+bp_type: BTB (ret)
+strong transient: 4
+bp_type: RSB
+strong transient: 1
+== DONE!: BP-SEC-SIM (exp3) ==
+
+
