@@ -16,7 +16,7 @@
 // Branch Predictor Security Evaluation Framework (Symbolic Simulator)
 //
 // author: iamywang
-// date: 2023/06/05
+// date: 2023/11/24
 // ============================================================================
 use crate::simulator;
 
@@ -26,7 +26,42 @@ use crate::simulator;
 //   - This function is used to derive all three-step vulnerablities.
 // ============================================================================
 fn baseline_bp() {
-    println!("Branch Predictor");
+    println!("Branch Predictor (without RSB refilling)");
+    let mut pht_exlude_states: Vec<i32> = Vec::new();
+    pht_exlude_states.push(3);
+    pht_exlude_states.push(4);
+    pht_exlude_states.push(11);
+    pht_exlude_states.push(12);
+    simulator::spec_simulator(pht_exlude_states, "PHT".to_string(), false);
+
+    let btb_ind_exlude_states: Vec<i32> = Vec::new();
+    simulator::spec_simulator(btb_ind_exlude_states, "BTB (ind)".to_string(), false);
+
+    let mut btb_call_exlude_states: Vec<i32> = Vec::new();
+    btb_call_exlude_states.push(9);
+    btb_call_exlude_states.push(10);
+    simulator::spec_simulator(btb_call_exlude_states, "BTB (call)".to_string(), false);
+
+    let mut btb_ret_exlude_states: Vec<i32> = Vec::new();
+    btb_ret_exlude_states.push(9);
+    btb_ret_exlude_states.push(10);
+    simulator::spec_simulator(btb_ret_exlude_states, "BTB (ret)".to_string(), false);
+
+    let mut rsb_exlude_states: Vec<i32> = Vec::new();
+    rsb_exlude_states.push(7);
+    rsb_exlude_states.push(8);
+    rsb_exlude_states.push(9);
+    rsb_exlude_states.push(10);
+    simulator::spec_simulator(rsb_exlude_states, "RSB".to_string(), false);
+}
+
+// ============================================================================
+// Function: baseline_bp_rsb_refilling
+// description:
+//   - This function is used to derive all three-step vulnerablities.
+// ============================================================================
+fn baseline_bp_rsb_refilling() {
+    println!("Branch Predictor (with RSB refilling)");
     let mut pht_exlude_states: Vec<i32> = Vec::new();
     pht_exlude_states.push(3);
     pht_exlude_states.push(4);
@@ -449,6 +484,8 @@ fn invisi_cache() {
 pub fn exp3_baseline_bp() {
     println!("========= BP-SEC-SIM =========");
     baseline_bp();
+    println!("==============================");
+    baseline_bp_rsb_refilling();
     println!("== DONE!: BP-SEC-SIM (exp3) ==");
     println!("\n");
 }

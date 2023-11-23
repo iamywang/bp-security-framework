@@ -24,6 +24,7 @@ $ git clone https://github.com/iamywang/bp-security-benchmark.git
 Build the project:
 
 ```bash
+$ cd bp-security-benchmark
 $ cd bp-sec-sim
 $ cargo build --release
 ```
@@ -150,7 +151,19 @@ Example output:
 
 ```
 ========= BP-SEC-SIM =========
-Branch Predictor
+Branch Predictor (without RSB refilling)
+bp_type: PHT
+strong transient: 4
+bp_type: BTB (ind)
+strong transient: 6
+bp_type: BTB (call)
+strong transient: 4
+bp_type: BTB (ret)
+strong transient: 4
+bp_type: RSB
+strong transient: 2
+==============================
+Branch Predictor (with RSB refilling)
 bp_type: PHT
 strong transient: 4
 bp_type: BTB (ind)
