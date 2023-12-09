@@ -28,6 +28,8 @@ Output:
 
 ![sim](./screenshot/sim.png)
 
+Archival Repository:
+- Zenodo: [https://doi.org/10.5281/zenodo.10297402](https://doi.org/10.5281/zenodo.10297402)
 
 ## PART II: Security Benchmark
 
