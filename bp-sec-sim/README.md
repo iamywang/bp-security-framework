@@ -6,6 +6,23 @@ This framework is a formal modeling and analysis framework for evaluating the vu
 
 Research Artifact of HPCA 2024 Paper: *Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities*. This part contains the source code of our symbolic execution-based branch predictor simulator that can be used to automatically derive and analyze branch predictor security vulnerabilities.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10297402.svg)](https://doi.org/10.5281/zenodo.10297402)
+
+<table>
+<tbody>
+<tr>
+<td align="center", width="25%"><img src="../screenshot/badges/Open_Research.png" style="margin: 0 auto;"/></td>
+<td align="center", width="25%"><img src="../screenshot/badges/Research_Objects.png" style="margin: 0 auto;"/></td>
+<td align="center", width="25%"><img src="../screenshot/badges/Results_Reproduced.png" style="margin: 0 auto;"/></td>
+<td align="center", width="25%"><img src="../screenshot/badges/Findings_Replicated.png" style="margin: 0 auto;"/></td>
+<tr>
+<td align="center">Available</td>
+<td align="center">Reviewed</td>
+<td align="center">Reproduced</td>
+<td align="center">Replicated</td>
+</tbody>
+</table>
+
 ### 0x01 Getting Started
 
 Install Rust:
