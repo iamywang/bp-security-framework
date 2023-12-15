@@ -1,11 +1,11 @@
 // Copyright 2023 iamywang
-// 
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //     http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -16,7 +16,7 @@
 // Branch Predictor Security Evaluation Framework (Symbolic Simulator)
 //
 // author: iamywang
-// date: 2023/10/18
+// date: 2023/12/15
 // ============================================================================
 use std::collections::HashMap;
 
@@ -43,7 +43,7 @@ pub fn simulator(exclude_states: Vec<i32>, bp_type: String, print_res: bool) {
 
     let mut state_to_string: HashMap<i32, String> = HashMap::new();
 
-    if for_poc_gen {
+    if for_poc_gen == true {
         state_to_string.insert(0, "ACC".to_string());
         state_to_string.insert(1, "ASTAR".to_string());
         state_to_string.insert(2, "VSTAR".to_string());
@@ -90,7 +90,7 @@ pub fn simulator(exclude_states: Vec<i32>, bp_type: String, print_res: bool) {
 
     let mut path_to_vulnerability: HashMap<i32, String> = HashMap::new();
 
-    if for_poc_gen {
+    if for_poc_gen == true {
         path_to_vulnerability.insert(0, "UNKNOWN".to_string());
         path_to_vulnerability.insert(1, "FAST".to_string());
         path_to_vulnerability.insert(2, "SLOW".to_string());
@@ -213,7 +213,7 @@ pub fn simulator(exclude_states: Vec<i32>, bp_type: String, print_res: bool) {
                 if k == 0 && covert_channel == true {
                     strong_vulnerabilities += 1;
 
-                    if for_poc_gen {
+                    if for_poc_gen == true {
                         tea.push(format!(
                             "vulnerablities.push_back(pattern({}, {}, {}, FAST, TEA));",
                             state_to_string.get(&i).unwrap(),
@@ -323,7 +323,7 @@ pub fn simulator(exclude_states: Vec<i32>, bp_type: String, print_res: bool) {
                         }
                     }
 
-                    if for_poc_gen {
+                    if for_poc_gen == true {
                         tsca.push(format!(
                             "vulnerablities.push_back(pattern({}, {}, {}, {}, TSCA));",
                             state_to_string.get(&i).unwrap(),
@@ -366,7 +366,7 @@ pub fn simulator(exclude_states: Vec<i32>, bp_type: String, print_res: bool) {
                         }
                     }
 
-                    if for_poc_gen {
+                    if for_poc_gen == true {
                         tsca.push(format!(
                             "vulnerablities.push_back(pattern({}, {}, {}, {}, TSCA));",
                             state_to_string.get(&i).unwrap(),
@@ -401,16 +401,22 @@ pub fn simulator(exclude_states: Vec<i32>, bp_type: String, print_res: bool) {
             if i % 2 == 0 {
                 println!("{}", tsca[i]);
             } else {
-                println!("{}\\\\", tsca[i]);
-                // println!("{}", tsca[i]);
+                if for_poc_gen == true {
+                    println!("{}", tsca[i]);
+                } else {
+                    println!("{}\\\\", tsca[i]);
+                }
             }
         }
         for i in 0..tea.len() {
             if i % 2 == 0 {
                 println!("{}", tea[i]);
             } else {
-                println!("{}\\\\", tea[i]);
-                // println!("{}", tea[i]);
+                if for_poc_gen == true {
+                    println!("{}", tea[i]);
+                } else {
+                    println!("{}\\\\", tea[i]);
+                }
             }
         }
     }
