@@ -14,12 +14,12 @@ Research Artifact of HPCA 2024 Paper: *Modeling, Derivation, and Automated Analy
 <td align="center", width="25%"><img src="../screenshot/badges/Open_Research.png" style="margin: 0 auto;"/></td>
 <td align="center", width="25%"><img src="../screenshot/badges/Research_Objects.png" style="margin: 0 auto;"/></td>
 <td align="center", width="25%"><img src="../screenshot/badges/Results_Reproduced.png" style="margin: 0 auto;"/></td>
-<td align="center", width="25%"><img src="../screenshot/badges/Findings_Replicated.png" style="margin: 0 auto;"/></td>
+<!-- <td align="center", width="25%"><img src="../screenshot/badges/Findings_Replicated.png" style="margin: 0 auto;"/></td> -->
 <tr>
 <td align="center">Available</td>
 <td align="center">Reviewed</td>
 <td align="center">Reproduced</td>
-<td align="center">Replicated</td>
+<!-- <td align="center">Replicated</td> -->
 </tbody>
 </table>
 
