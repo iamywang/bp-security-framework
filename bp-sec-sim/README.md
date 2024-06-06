@@ -54,6 +54,15 @@ Usage:
 $ ./target/release/bp-sec-sim <exp1_derivation|exp2_rsb_refilling|exp2_secure_bp|exp3_baseline_bp|exp3_secure_bp|exp3_hw_defenses|exp4_tage>
 ```
 
+A `Dockerfile` is provided for automatic deployment. You can create a Docker container with all necessary dependencies by following these steps:
+
+1. Install Docker: `sudo apt install docker.io`
+2. Clone the repository: `git clone https://github.com/iamywang/bp-security-benchmark.git && cd bp-sec-sim`
+3. Build the Docker image: `docker build -t bp-sec-sim .`
+4. Run and attach to the Docker container: `docker run -it bp-sec-sim`
+5. After you are done, delete the Docker container: `docker ps -a` and `docker rm <CONTAINER_ID>`
+6. (Optional) Delete the Docker image: `docker images` and `docker rmi <IMAGE_ID>`
+
 ### 0x02 File Structure
 
 File | Description

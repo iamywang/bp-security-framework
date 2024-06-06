@@ -27,6 +27,8 @@ Prerequisites:
 
 - Rust 2021
 
+### Using Cargo
+
 Build the project:
 
 ```bash
@@ -44,6 +46,41 @@ $ ./target/release/bp-sec-sim exp1_derivation
 Output:
 
 ![sim](./screenshot/sim.png)
+
+### Using Docker
+
+A `Dockerfile` is provided for automatic deployment. You can create a Docker container with all necessary dependencies by following these steps:
+
+1. Install Docker: `sudo apt install docker.io`
+2. Clone the repository: `git clone https://github.com/iamywang/bp-security-benchmark.git && cd bp-sec-sim`
+3. Build the Docker image: `docker build -t bp-sec-sim .`
+4. Run and attach to the Docker container: `docker run -it bp-sec-sim`
+5. After you are done, delete the Docker container: `docker ps -a` and `docker rm <CONTAINER_ID>`
+6. (Optional) Delete the Docker image: `docker images` and `docker rmi <IMAGE_ID>`
+
+Upon attaching to the container, a `bash` shell will be presented:
+
+```bash
+root@f4ebe50229ac:/bp-sec-sim# bp-sec-sim
+========= BP-SEC-SIM =========
+Usage: ./bp-sec-sim <exp1_derivation|exp2_rsb_refilling|exp2_secure_bp|exp3_baseline_bp|exp3_secure_bp|exp3_hw_defenses|exp4_tage>
+Example: ./bp-sec-sim exp1_derivation
+========== LICENSE ===========
+Copyright 2023 iamywang
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================
+```
 
 ## PART II: Security Benchmark
 
