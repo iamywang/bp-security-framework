@@ -16,9 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set workdir
-      run: cd ./bp-sec-sim
     - name: Build
       run: cargo build --verbose
+      working-directory: bp-sec-sim
     - name: Run tests
       run: cargo test --verbose
+      working-directory: bp-sec-sim
