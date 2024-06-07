@@ -2,6 +2,14 @@
 
 This framework is a formal modeling and analysis framework for evaluating the vulnerabilities of timing-based and transient execution-based attacks on branch predictors in modern processors.
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/iamywang/bp-security-framework/rust.yml)
+![GitHub License](https://img.shields.io/github/license/iamywang/bp-security-framework)
+![GitHub top language](https://img.shields.io/github/languages/top/iamywang/bp-security-framework?logo=rust)
+![GitHub repo size](https://img.shields.io/github/repo-size/iamywang/bp-security-framework)
+![GitHub last commit](https://img.shields.io/github/last-commit/iamywang/bp-security-framework)
+![GitHub Repo stars](https://img.shields.io/github/stars/iamywang/bp-security-framework)
+![GitHub forks](https://img.shields.io/github/forks/iamywang/bp-security-framework)
+
 ## PART I: Symbolic Simulator
 
 Research Artifact of HPCA 2024 Paper: *Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities*. This part contains the source code of our symbolic execution-based branch predictor simulator that can be used to automatically derive and analyze branch predictor security vulnerabilities.
