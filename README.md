@@ -167,10 +167,12 @@ If you have any questions, please contact me through `GitHub Issues` or email: w
 If our work is useful for your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{wang2024modeling,
-  title={{Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities}},
+@INPROCEEDINGS{wang2024modeling,
+  title={{Modeling, Derivation, and Automated Analysis of Branch Predictor Security Vulnerabilities}}, 
   author={Wang, Quancheng and Tang, Ming and Xu, Ke and Wang, Han},
-  booktitle={2024 IEEE International Symposium on High-Performance Computer Architecture (HPCA)},
-  year={2024}
+  booktitle={2024 IEEE International Symposium on High-Performance Computer Architecture (HPCA)}, 
+  year={2024},
+  pages={409-423},
+  doi={10.1109/HPCA57654.2024.00038}
 }
 ```
