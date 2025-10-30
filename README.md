@@ -40,7 +40,7 @@ Prerequisites:
 Build the project:
 
 ```bash
-$ git clone https://github.com/iamywang/bp-security-benchmark.git
+$ git clone https://github.com/iamywang/bp-security-framework.git
 $ cd bp-sec-sim
 $ cargo build --release
 ```
@@ -60,7 +60,7 @@ Output:
 A `Dockerfile` is provided for automatic deployment. You can create a Docker container with all necessary dependencies by following these steps:
 
 1. Install Docker: `sudo apt install docker.io`
-2. Clone the repository: `git clone https://github.com/iamywang/bp-security-benchmark.git && cd bp-sec-sim`
+2. Clone the repository: `git clone https://github.com/iamywang/bp-security-framework.git && cd bp-sec-sim`
 3. Build the Docker image: `docker build -t bp-sec-sim .`
 4. Run and attach to the Docker container: `docker run -it bp-sec-sim`
 5. After you are done, delete the Docker container: `docker ps -a` and `docker rm <CONTAINER_ID>`
@@ -103,8 +103,8 @@ Prerequisites:
 Build the project:
 
 ```bash
-$ git clone https://github.com/iamywang/bp-security-benchmark.git
-$ cd bp-security-benchmark
+$ git clone https://github.com/iamywang/bp-security-framework.git
+$ cd bp-security-framework
 $ cd bp-sec-bench
 $ mkdir build && cd build
 $ cmake ..
